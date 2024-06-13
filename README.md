@@ -6,7 +6,7 @@ VSCode+riscv-gnu-toolchain
 
 SRCフォルダは[公式ファームウェア](https://github.com/openwch/ch32v20x/tree/main/EVT/EXAM/SRC)
 
-STM32マイコンを触ったことのない、初学者のメモです
+STM32マイコンを触ったことのない、初学者のメモです。
 
 ## GPIO
 
