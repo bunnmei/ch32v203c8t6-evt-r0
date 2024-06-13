@@ -10,6 +10,9 @@ STM32マイコンを触ったことのない、初学者のメモです。
 
 ## GPIO
 
+### GPIO/blink
+PA0のLチカ
+
 ### GPIO/gpio_interrupt
 ボタンを押して電圧がかかると割り込み。
 
