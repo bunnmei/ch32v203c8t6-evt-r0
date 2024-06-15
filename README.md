@@ -38,3 +38,12 @@ void EXTI0_IRQHandler(void)
 ↑関数を追記し、関数内に割り込み時の処理を書く。
 void EXTI0_IRQHandler(void) __attribute__((interrupt("machine")));は、
 デフォルトではinterrupt("WCH-Interrupt-fast")ですが、書き換える必要があるみたい。[参考](https://nc-pin.com/index.php/category/wch/ch32v-series/)
+
+## ADC
+
+### ADC/adc_dma
+
+公式サンプルのADC/DMAは DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;になっているためリセット時に一度だけしか値を読み取ることができない？ DMA_Mode_Circularに変更で値を更新することができる。
+main > whileの
+uint8_t v1 = v / 10;　一桁目
+uint8_t v2 = v % 10;　小数点一位

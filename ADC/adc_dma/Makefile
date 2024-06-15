@@ -15,6 +15,8 @@ SYSOBJS = \
 	ch32v20x_rcc.o \
 	ch32v20x_dbgmcu.o \
 	ch32v20x_misc.o \
+	ch32v20x_adc.o \
+	ch32v20x_dma.o \
 	debug.o \
 	startup_ch32v20x_D6.o
 
@@ -82,6 +84,10 @@ ch32v20x_gpio.o: $(CH32V20X_SDK)/Peripheral/src/ch32v20x_gpio.c
 ch32v20x_usart.o: $(CH32V20X_SDK)/Peripheral/src/ch32v20x_usart.c
 	$(COMPILE.c) $(OUTPUT_OPTION) $<
 ch32v20x_exti.o: $(CH32V20X_SDK)/Peripheral/src/ch32v20x_exti.c
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+ch32v20x_adc.o: $(CH32V20X_SDK)/Peripheral/src/ch32v20x_adc.c
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+ch32v20x_dma.o: $(CH32V20X_SDK)/Peripheral/src/ch32v20x_dma.c
 	$(COMPILE.c) $(OUTPUT_OPTION) $<
 
 startup_ch32v20x_D6.o: $(CH32V20X_SDK)/Startup/startup_ch32v20x_D6.s
