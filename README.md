@@ -51,3 +51,10 @@ DMA_Mode_Circularに変更で値を更新することができる。
 main > whileの \
 uint8_t v1 = v / 10;　一桁目 \
 uint8_t v2 = v % 10;　小数点一位 
+
+## TIM
+
+### TIM/timer_interrupt
+
+system_ch32v20x.cのL27のコメントを外し144Mhzに変更する。
+タイマーを初期化し、割り込みを登録する。
